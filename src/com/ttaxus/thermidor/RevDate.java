@@ -26,11 +26,11 @@ public class RevDate {
 		this.month = month;
 		this.day = day;
 	}
+	
 	// convert the despised reactionary date of the ancien regime 
 	// to our glorious rational format
-	public static RevDate fromGregorian(int cyear, int cmonth, int cday) {
+	public static RevDate fromGregorian(LocalDate d) {
 		LocalDate start = new LocalDate(1792,9,22);
-		LocalDate d = new LocalDate(cyear, cmonth, cday);
 		int days = Days.daysBetween(start, d).getDays();
 		int year = 1;
 		int yearLen = yearLength(year);
@@ -43,14 +43,13 @@ public class RevDate {
 		int day = (1 + (days % 30));
 		return new RevDate(year, month, day);
 	}
-	@Override
-	  public String toString() {
-	    String names [] = {"Vendémiaire", "Brumaire", "Frimaire", 
-	    		"Nivôse", "Pluviôse", "Ventôse", "Germinal", 
-	    		"Floréal", "Prairial", "Messidor",
-	            "Thermidor", "Fructidor", "Sansculottides"};
-	    String s = "";
-	    s += day +" " + names[month - 1] + " " + year;
-	    return s;
-	  }
+	public String toString(String[] months) {
+	  String s = "";
+	  s += day +" " + months[month - 1] + " " + year;
+	  return s;
+	}
+	public String symbol(String[] symbols)  {
+		int dayNum = 30*(month - 1) + (day - 1);
+		return symbols[dayNum];
+	}
 }

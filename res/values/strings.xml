@@ -3,6 +3,422 @@
 
     <string name="app_name">Thermidor</string>
     <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
-
+   	<string name="info_text">BlahBlah</string>
+    <string-array name="French_months">
+        <item>Vendémiaire</item>
+        <item>Brumaire</item>
+        <item>Frimaire</item>
+        <item>Nivôse</item>
+        <item>Pluviôse</item>
+        <item>Ventôse</item>
+        <item>Germinal</item>
+        <item>Floréal</item>
+        <item>Prairial</item>
+        <item>Messidor</item>
+,        <item>Thermidor</item>
+        <item>Fructidor</item>
+        <item>Sansculottides</item>
+    </string-array>
+    <string-array name="Carlyle_months">
+        <item>Vintagearious</item>
+        <item>Fogarious</item>
+        <item>Frostarious</item>
+        <item>Snowous</item>
+        <item>Rainous</item>
+        <item>Windous</item>
+        <item>Buddal</item>
+        <item>Floweral</item>
+        <item>Meadowal</item>
+        <item>Reapidor</item>
+        <item>Heatidor</item>
+        <item>Fruitidor</item>
+        <item>Sansculottides</item>
+    </string-array>
+    <string-array name="English_satirical_months">
+        <item>Wheezy</item>
+        <item>Sneezy</item>
+        <item>Freezy</item>
+        <item>Slippy</item>
+        <item>Drippy</item>
+        <item>Nippy</item>
+        <item>Showery</item>
+        <item>Flowery</item>
+        <item>Bowery</item>
+        <item>Wheaty</item>
+        <item>Heaty</item>
+        <item>Sweety</item>
+        <item>Sansculottides</item>
+    </string-array>
+	<string name="radioFrench">French Month Names</string>
+	<string name="radioCarlyle">Carlyle\'s English Month Names</string>
+	<string name="radioSatire">Satirical English Month Names</string>
+    <string name="title_activity_settings">Settings</string>
+	<string-array name="Day_Names">
+	<item>Raisin (Grape)</item>
+	<item>Safran (Saffron)</item>
+	<item>Châtaigne (Chestnut)</item>
+	<item>Colchique (Crocus)</item>
+	<item>Cheval (Horse)</item>
+	<item>Balsamine (Impatiens)</item>
+	<item>Carotte (Carrot)</item>
+	<item>Amarante (Amaranth)</item>
+	<item>Panais (Parsnip)</item>
+	<item>Cuve (Vat)</item>
+	<item>Pomme de terre (Potato)</item>
+	<item>Immortelle (Strawflower)</item>
+	<item>Potiron (Calabaza)</item>
+	<item>Réséda (Mignonette)</item>
+	<item>Âne (Donkey)</item>
+	<item>Belle de nuit (The four o’clock flower)</item>
+	<item>Citrouille (Pumpkin)</item>
+	<item>Sarrasin (Buckwheat)</item>
+	<item>Tournesol (Sunflower)</item>
+	<item>Pressoir (Wine-Press)</item>
+	<item>Chanvre (Hemp)</item>
+	<item>Pêche (Peach)</item>
+	<item>Navet (Turnip)</item>
+	<item>Amaryllis (Amaryllis)</item>
+	<item>Bœuf (Cow)</item>
+	<item>Aubergine (Eggplant)</item>
+	<item>Piment (Chili Pepper)</item>
+	<item>Tomate (Tomato)</item>
+	<item>Orge (Barley)</item>
+	<item>Tonneau (Barrel)</item>
+	<item>Pomme (Apple)</item>
+	<item>Céleri (Celery)</item>
+	<item>Poire (Pear)</item>
+	<item>Betterave (Beet root)</item>
+	<item>Oie (Goose)</item>
+	<item>Héliotrope (Heliotrope)</item>
+	<item>Figue (Fig)</item>
+	<item>Scorsonère (Black Salsify)</item>
+	<item>Alisier (Chequer Tree)</item>
+	<item>Charrue (Plough)</item>
+	<item>Salsifis (Salsify)</item>
+	<item>Macre (Water chestnut)</item>
+	<item>Topinambour (Jerusalem Artichoke)</item>
+	<item>Endive (Endive)</item>
+	<item>Dindon (Turkey)</item>
+	<item>Chervis (Skirret)</item>
+	<item>Cresson (Watercress)</item>
+	<item>Dentelaire (Leadworts)</item>
+	<item>Grenade (Pomegranate)</item>
+	<item>Herse (Harrow)</item>
+	<item>Bacchante (Asarum baccharis)</item>
+	<item>Azerole (Acerola)</item>
+	<item>Garance (Madder)</item>
+	<item>Orange (Orange)</item>
+	<item>Faisan (Pheasant)</item>
+	<item>Pistache (Pistachio)</item>
+	<item>Macjonc (Tuberous pea)</item>
+	<item>Coing (Quince)</item>
+	<item>Cormier (Service tree)</item>
+	<item>Rouleau (Roller)</item>
+	<item>Raiponce (Rampion)</item>
+	<item>Turneps (Turnip)</item>
+	<item>Chicorée (Chicory)</item>
+	<item>Nèfle (Medlar)</item>
+	<item>Cochon (Pig)</item>
+	<item>Mâche (Corn Salad)</item>
+	<item>Chou-fleur (Cauliflower)</item>
+	<item>Miel (Honey)</item>
+	<item>Genièvre (Juniper)</item>
+	<item>Pioche (Pickaxe)</item>
+	<item>Cire (Wax)</item>
+	<item>Raifort (Horseradish)</item>
+	<item>Cèdre (Cedar tree)</item>
+	<item>Sapin (Fir tree)</item>
+	<item>Chevreuil (Roe Deer)</item>
+	<item>Ajonc (Gorse)</item>
+	<item>Cyprès (Cypress Tree)</item>
+	<item>Lierre (Ivy)</item>
+	<item>Sabine (Juniper)</item>
+	<item>Hoyau (Grub-hoe)</item>
+	<item>Érable sucré (Maple Tree)</item>
+	<item>Bruyère (Heather)</item>
+	<item>Roseau (Reed plant)</item>
+	<item>Oseille (Sorrel)</item>
+	<item>Grillon (Cricket)</item>
+	<item>Pignon (Pinenut)</item>
+	<item>Liège (cork)</item>
+	<item>Truffe (Truffle)</item>
+	<item>Olive (Olive)</item>
+	<item>Pelle (shovel)</item>
+	<item>Tourbe (Peat)</item>
+	<item>Houille (Coal)</item>
+	<item>Bitume (Bitumen)</item>
+	<item>Soufre (Sulphur)</item>
+	<item>Chien (Dog)</item>
+	<item>Lave (Lava)</item>
+	<item>Terre végétale (Topsoil)</item>
+	<item>Fumier (Manure)</item>
+	<item>Salpêtre (Saltpeter)</item>
+	<item>Fléau (Flail)</item>
+	<item>Granit (Granite stone)</item>
+	<item>Argile (Clay)</item>
+	<item>Ardoise (Slate)</item>
+	<item>Grès (Sandstone)</item>
+	<item>Lapin (Rabbit)</item>
+	<item>Silex (Flint)</item>
+	<item>Marne (Marl)</item>
+	<item>Pierre à chaux (Limestone)</item>
+	<item>Marbre (Marble)</item>
+	<item>Van (Winnowing basket)</item>
+	<item>Pierre à plâtre (Gypsum)</item>
+	<item>Sel (Salt)</item>
+	<item>Fer (Iron)</item>
+	<item>Cuivre (Copper)</item>
+	<item>Chat (Cat)</item>
+	<item>Étain (Tin)</item>
+	<item>Plomb (Lead)</item>
+	<item>Zinc (Zinc)</item>
+	<item>Mercure (Mercury (metal))</item>
+	<item>Crible (Sieve)</item>
+	<item>Lauréole (Spurge-laurel)</item>
+	<item>Mousse (Moss)</item>
+	<item>Fragon (Butcher’s Broom)</item>
+	<item>Perce-neige (Snowdrop)</item>
+	<item>Taureau (Bull)</item>
+	<item>Laurier-thym (Laurustinus)</item>
+	<item>Amadouvier (Tinder polypore)</item>
+	<item>Mézéréon (Daphne mezereum)</item>
+	<item>Peuplier (Poplar Tree)</item>
+	<item>Coignée (Axe)</item>
+	<item>Ellébore (Hellebore)</item>
+	<item>Brocoli (Broccoli)</item>
+	<item>Laurier (Laurel)</item>
+	<item>Avelinier (Cob or filbert)</item>
+	<item>Vache (Cow)</item>
+	<item>Buis (Box Tree)</item>
+	<item>Lichen (Lichen)</item>
+	<item>If (Yew tree)</item>
+	<item>Pulmonaire (Lungwort)</item>
+	<item>Serpette (Billhook)</item>
+	<item>Thlaspi (Pennycress)</item>
+	<item>Thimelé (Rose Daphne)</item>
+	<item>Chiendent (Couch Grass)</item>
+	<item>Trainasse (Knotweed)</item>
+	<item>Lièvre (Hare)</item>
+	<item>Guède (Woad)</item>
+	<item>Noisetier (Hazel)</item>
+	<item>Cyclamen (Cyclamen)</item>
+	<item>Chélidoine (Celandine)</item>
+	<item>Traîneau (Sleigh)</item>
+	<item>Tussilage (Coltsfoot)</item>
+	<item>Cornouiller (Dogwood)</item>
+	<item>Violier (Matthiola)</item>
+	<item>Troène (Privet)</item>
+	<item>Bouc (Billygoat)</item>
+	<item>Asaret (Wild Ginger)</item>
+	<item>Alaterne (Buckthorn)</item>
+	<item>Violette (Violet (plant))</item>
+	<item>Marceau (Goat Willow)</item>
+	<item>Bêche (Spade)</item>
+	<item>Narcisse (Narcissus)</item>
+	<item>Orme (Elm Tree)</item>
+	<item>Fumeterre (Common fumitory)</item>
+	<item>Vélar (Hedge Mustard)</item>
+	<item>Chèvre (Goat)</item>
+	<item>Épinard (Spinach)</item>
+	<item>Doronic (Large-flowered Leopard’s Bane)</item>
+	<item>Mouron (Pimpernel)</item>
+	<item>Cerfeuil (Chervil)</item>
+	<item>Cordeau (Twine)</item>
+	<item>Mandragore (Mandrake)</item>
+	<item>Persil (Parsley)</item>
+	<item>Cochléaria (Scurvy-grass)</item>
+	<item>Pâquerette (Daisy)</item>
+	<item>Thon (Tuna)</item>
+	<item>Pissenlit (Dandelion)</item>
+	<item>Sylve (Forest)</item>
+	<item>Capillaire (Maidenhair fern)</item>
+	<item>Frêne (Ash Tree)</item>
+	<item>Plantoir (Dibber: a hand gardening tool)</item>
+	<item>Primevère (Primrose)</item>
+	<item>Platane (Plane Tree)</item>
+	<item>Asperge (Asparagus)</item>
+	<item>Tulipe (Tulip)</item>
+	<item>Poule (Hen)</item>
+	<item>Bette (Chard Plant)</item>
+	<item>Bouleau (Birch Tree)</item>
+	<item>Jonquille (Daffodil)</item>
+	<item>Aulne (Alder)</item>
+	<item>Couvoir (Hatchery)</item>
+	<item>Pervenche (Periwinkle)</item>
+	<item>Charme (Ironwood)</item>
+	<item>Morille (Morel)</item>
+	<item>Hêtre (Beech Tree)</item>
+	<item>Abeille (Bee)</item>
+	<item>Laitue (Lettuce)</item>
+	<item>Mélèze (Larch)</item>
+	<item>Ciguë (Hemlock)</item>
+	<item>Radis (Radish)</item>
+	<item>Ruche (Hive)</item>
+	<item>Gainier (Judas tree)</item>
+	<item>Romaine (Lettuce)</item>
+	<item>Marronnier (Chestnut Oak)</item>
+	<item>Roquette (Arugula or Rocket)</item>
+	<item>Pigeon (Pigeon)</item>
+	<item>Lilas (Lilac)</item>
+	<item>Anémone (Anemone)</item>
+	<item>Pensée (Pansy)</item>
+	<item>Myrtille (Blueberry)</item>
+	<item>Greffoir (Knife)</item>
+	<item>Rose (Rose)</item>
+	<item>Chêne (Oak Tree)</item>
+	<item>Fougère (Fern)</item>
+	<item>Aubépine (Hawthorn)</item>
+	<item>Rossignol (Nightingale)</item>
+	<item>Ancolie (Columbine)</item>
+	<item>Muguet (Lily of the Valley)</item>
+	<item>Champignon (Button mushroom)</item>
+	<item>Hyacinthe (Hyacinth)</item>
+	<item>Râteau (Rake)</item>
+	<item>Rhubarbe (Rhubarb)</item>
+	<item>Sainfoin (Sainfoin)</item>
+	<item>Bâton-d’or (Wallflower)</item>
+	<item>Chamérops (Palm tree)</item>
+	<item>Ver à soie (Silkworm)</item>
+	<item>Consoude (Comfrey)</item>
+	<item>Pimprenelle (Salad Burnet)</item>
+	<item>Corbeille d’or (Basket of Gold)</item>
+	<item>Arroche (Orache)</item>
+	<item>Sarcloir (Garden hoe)</item>
+	<item>Statice (Sea Lavender)</item>
+	<item>Fritillaire (Fritillary)</item>
+	<item>Bourrache (Borage)</item>
+	<item>Valériane (Valerian)</item>
+	<item>Carpe (Carp)</item>
+	<item>Fusain (Spindle (shrub))</item>
+	<item>Civette (Chive)</item>
+	<item>Buglosse (Bugloss)</item>
+	<item>Sénevé (Wild mustard)</item>
+	<item>Houlette (Shepherd’s crook)</item>
+	<item>Luzerne (Alfalfa)</item>
+	<item>Hémérocalle (Daylily)</item>
+	<item>Trèfle (Clover)</item>
+	<item>Angélique (Angelica)</item>
+	<item>Canard (Duck)</item>
+	<item>Mélisse (Lemon Balm)</item>
+	<item>Fromental (Oat grass)</item>
+	<item>Martagon (Martagon lily)</item>
+	<item>Serpolet (Thyme plant)</item>
+	<item>Faux (Scythe)</item>
+	<item>Fraise (Strawberry)</item>
+	<item>Bétoine (Woundwort)</item>
+	<item>Pois (Pea)</item>
+	<item>Acacia (Acacia)</item>
+	<item>Caille (Quail)</item>
+	<item>Œillet (Carnation)</item>
+	<item>Sureau (Elderberry)</item>
+	<item>Pavot (Poppy plant)</item>
+	<item>Tilleul (Linden or Lime tree)</item>
+	<item>Fourche (Pitchfork)</item>
+	<item>Barbeau (Cornflower)</item>
+	<item>Camomille (Camomile)</item>
+	<item>Chèvrefeuille (Honeysuckle)</item>
+	<item>caille-lait (Bedstraw)</item>
+	<item>Tanche (Tench)</item>
+	<item>Jasmin (Jasmine Plant)</item>
+	<item>Verveine (Verbena)</item>
+	<item>Thym (Thyme Plant)</item>
+	<item>Pivoine (Peony Plant)</item>
+	<item>Chariot (Hand Cart)</item>
+	<item>Seigle (Rye)</item>
+	<item>Avoine (Oats)</item>
+	<item>Oignon (Onion)</item>
+	<item>Véronique (Speedwell)</item>
+	<item>Mulet (Mule)</item>
+	<item>Romarin (Rosemary)</item>
+	<item>Concombre (Cucumber)</item>
+	<item>Échalote (Shallot)</item>
+	<item>Absinthe (Wormwood)</item>
+	<item>Faucille (Sickle)</item>
+	<item>Coriandre (Coriander)</item>
+	<item>Artichaut (Artichoke)</item>
+	<item>Girofle (Clove)</item>
+	<item>Lavande (Lavender)</item>
+	<item>Chamois (Chamois)</item>
+	<item>Tabac (Tobacco)</item>
+	<item>Groseille (Currant)</item>
+	<item>Gesse (Hairy Vetchling)</item>
+	<item>Cerise (Cherry)</item>
+	<item>Parc (Park)</item>
+	<item>Menthe (Mint)</item>
+	<item>Cumin (Cumin)</item>
+	<item>Haricot (Bean)</item>
+	<item>Orcanète (Alkanet)</item>
+	<item>Pintade (Guinea fowl)</item>
+	<item>Sauge (Sage Plant)</item>
+	<item>Ail (Garlic)</item>
+	<item>Vesce (Tare)</item>
+	<item>Blé (Wheat)</item>
+	<item>Chalémie (Shawm)</item>
+	<item>Épeautre (Einkorn Wheat)</item>
+	<item>Bouillon blanc (Common Mullein)</item>
+	<item>Melon (Honeydew Melon)</item>
+	<item>Ivraie (Ryegrass)</item>
+	<item>Bélier (Ram)</item>
+	<item>Prêle (Horsetail)</item>
+	<item>Armoise (Mugwort)</item>
+	<item>Carthame (Safflower)</item>
+	<item>Mûre (Blackberry)</item>
+	<item>Arrosoir (Watering Can)</item>
+	<item>Panis (Panic grass)</item>
+	<item>Salicorne (Common Glasswort)</item>
+	<item>Abricot (Apricot)</item>
+	<item>Basilic (Basil)</item>
+	<item>Brebis (Ewe)</item>
+	<item>Guimauve (Marshmallow root)</item>
+	<item>Lin (Flax)</item>
+	<item>Amande (Almond)</item>
+	<item>Gentiane (Gentian)</item>
+	<item>Écluse (Lock)</item>
+	<item>Carline (Carline thistle)</item>
+	<item>Câprier (Caper)</item>
+	<item>Lentille (Lentil)</item>
+	<item>Aunée (Yellow starwort)</item>
+	<item>Loutre (Otter)</item>
+	<item>Myrte (Myrtle)</item>
+	<item>Colza (Rapeseed)</item>
+	<item>Lupin (Lupin)</item>
+	<item>Coton (Cotton)</item>
+	<item>Moulin (Mill)</item>
+	<item>Prune (Plum)</item>
+	<item>Millet (Millet)</item>
+	<item>Lycoperdon (Puffball)</item>
+	<item>Escourgeon (Six-row Barley)</item>
+	<item>Saumon (Salmon)</item>
+	<item>Tubéreuse (Tuberose)</item>
+	<item>Sucrion (Sugar melon)</item>
+	<item>Apocyn (Apocynum)</item>
+	<item>Réglisse (Liquorice)</item>
+	<item>Échelle (Ladder)</item>
+	<item>Pastèque (Watermelon)</item>
+	<item>Fenouil (Fennel)</item>
+	<item>Épine vinette (Barberry)</item>
+	<item>Noix (Walnut)</item>
+	<item>Truite (Trout)</item>
+	<item>Citron (Lemon)</item>
+	<item>Cardère (Teasel)</item>
+	<item>Nerprun (Buckthorn)</item>
+	<item>Tagette (Mexican Marigold)</item>
+	<item>Hotte (Sack)</item>
+	<item>Églantine (Wild Rose)</item>
+	<item>Noisette (Hazelnut)</item>
+	<item>Houblon (Hops)</item>
+	<item>Sorgho (Sorghum)</item>
+	<item>Écrevisse (Crayfish)</item>
+	<item>Bigarade (Bitter Orange)</item>
+	<item>Verge d’or (Goldenrod)</item>
+	<item>Maïs (Maize or Corn)</item>
+	<item>Marron (Chestnut)</item>
+	<item>Panier (Basket)</item>
+	<item>La Fête de la Vertu (Celebration of Virtue)</item>
+	<item>La Fête du Génie (Celebration of Talent)</item>
+	<item>La Fête du Travail (Celebration of Labour)</item>
+	<item>La Fête de l\'Opinion (Celebration of Principles)</item>
+	<item>La Fête des Récompenses (Celebration of Honours)</item>
+	<item>La Fête de la Révolution (Celebration of the Revolution)</item>
+</string-array>
 </resources>

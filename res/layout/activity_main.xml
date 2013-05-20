@@ -12,23 +12,25 @@
         android:id="@+id/date_field"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginLeft="80dp"
-        android:layout_marginTop="32dp"
         android:text="Date"
         android:textAppearance="?android:attr/textAppearanceLarge" />
-
+<TextView
+        android:id="@+id/symbol_field"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date_field"
+        android:text="Symbol" />
+    
     <DatePicker
         android:id="@+id/dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/date_field"
+        android:layout_below="@+id/symbol_field"
         android:layout_centerHorizontal="true"
-        android:layout_marginLeft="80dp"
-        android:layout_marginTop="53dp"
-        
-        android:calendarViewShown="false"/>
+        android:calendarViewShown="false" />
 
     <Button
         android:id="@+id/button1"
@@ -36,8 +38,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="33dp"
         android:onClick="gotoToday"
-        android:text="Today" />
-  
+        android:text="Today" />  
 </RelativeLayout>
