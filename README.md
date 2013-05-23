@@ -6,6 +6,10 @@ Android version of Thermidor, a French Revolutionary Calendar
 This is an Eclipse ADT project that I created to learn Android programming.
 
 
+Changes
+=======
+1.1 added onResume() to update on current daye on resume
+
 License
 ================
 (The MIT License)

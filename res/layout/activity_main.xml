@@ -38,6 +38,5 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/dp"
         android:layout_centerHorizontal="true"
-        android:onClick="gotoToday"
-        android:text="Today" />  
+        android:text="Today" />
 </RelativeLayout>

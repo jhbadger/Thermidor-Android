@@ -6,7 +6,7 @@ import org.joda.time.LocalDate;
 public class Thermidor extends Application {
 	String months[];
 	String symbols[];
-	int checked;
+	int checked = R.id.radioFrench;
 	LocalDate d = new LocalDate();
 	
 	public void onCreate() {

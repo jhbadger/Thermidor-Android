@@ -28,19 +28,30 @@ public class MainActivity extends Activity {
         // go to today when button is pressed,
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-            	DatePicker dp = (DatePicker) findViewById(R.id.dp);
-            	LocalDate d =  new LocalDate();
-            	dp.updateDate(d.getYear(), d.getMonthOfYear() - 1, 
-            			d.getDayOfMonth());
-            	update(d);
+            	today();
             }
         });
         LocalDate d = ((Thermidor)getApplication()).getDate();
         update(d);
     }
     
+    // goto today
+    private void today() {
+    	DatePicker dp = (DatePicker) findViewById(R.id.dp);
+    	LocalDate d =  new LocalDate();
+    	dp.updateDate(d.getYear(), d.getMonthOfYear() - 1, 
+    			d.getDayOfMonth());
+    	update(d);
+    }
+    
+    // on resuming
+    public void onResume() {
+        super.onResume();
+        today();
+    }
+    
     // update date field with currently selected date
-    public void update(LocalDate d) {
+    private void update(LocalDate d) {
     	RevDate revdate = RevDate.fromGregorian(d);
         TextView date_field = (TextView)findViewById(R.id.date_field);
         TextView symbol_field = (TextView)findViewById(R.id.symbol_field);
