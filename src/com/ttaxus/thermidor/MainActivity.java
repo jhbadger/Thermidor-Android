@@ -4,61 +4,92 @@ import android.os.Bundle;
 import android.widget.CalendarView;
 import android.widget.TextView;
 import android.widget.DatePicker;
-import android.widget.Button;
 import android.app.Activity;
+import android.os.Handler;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import org.joda.time.LocalDate;
+import org.joda.time.DateTime;
+import android.util.SparseArray;
 
 public class MainActivity extends Activity {
+	Handler handler = new Handler();
+	DatePicker dp;
+	TextView clockText, dateText, symbolText;
+	String[] symbols;
+	SparseArray<String[]> months;
+	Runnable clock;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        DatePicker dp = (DatePicker) findViewById(R.id.dp);
+        dp = (DatePicker) findViewById(R.id.dp);
+        clockText = (TextView)findViewById(R.id.clockText);
+        clockText.setText(new DecimalTime(new DateTime()).toString());
+        dateText = (TextView)findViewById(R.id.dateText);
+        symbolText = (TextView)findViewById(R.id.symbolText);
+        months = new SparseArray<String []>();
+        months.put(R.id.radioFrench, getResources().getStringArray(R.array.French_months));
+        months.put(R.id.radioCarlyle, getResources().getStringArray(R.array.Carlyle_months));
+        months.put(R.id.radioSatire, getResources().getStringArray(R.array.English_satirical_months));
+        symbols = getResources().getStringArray(R.array.Day_Names);
         // update revolutionary date when DatePicker updated
         dp.getCalendarView().setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
           public void onSelectedDayChange(CalendarView view, int year, int month, int day) {
             update(new LocalDate(year, month + 1, day));
           }
         });
-        Button button = (Button) findViewById(R.id.button1);
-        // go to today when button is pressed,
-        button.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-            	today();
+        clock = new Runnable()
+        {
+            public void run() 
+            {
+            	clockText.setText(new DecimalTime(new DateTime()).toString());
+            	handler.postDelayed(this, 100);
             }
-        });
+        }; 
         LocalDate d = ((Thermidor)getApplication()).getDate();
         update(d);
     }
     
+    // today button
+    public void todayButtonClick(View v) {
+    	today();
+    }
+    
     // goto today
     private void today() {
-    	DatePicker dp = (DatePicker) findViewById(R.id.dp);
     	LocalDate d =  new LocalDate();
     	dp.updateDate(d.getYear(), d.getMonthOfYear() - 1, 
     			d.getDayOfMonth());
     	update(d);
     }
     
+    // stop clock when application in background
+    protected void onPause() {
+        handler.removeCallbacks(clock);
+        super.onPause();
+    }
+    
+    protected void onDestroy() {
+        handler.removeCallbacks(clock);
+        super.onDestroy();
+    }
+    
     // on resuming
-    public void onResume() {
-        super.onResume();
+    protected void onResume() {
+        handler.postDelayed(clock, 100);
         today();
+        super.onResume();
     }
     
     // update date field with currently selected date
     private void update(LocalDate d) {
     	RevDate revdate = RevDate.fromGregorian(d);
-        TextView date_field = (TextView)findViewById(R.id.date_field);
-        TextView symbol_field = (TextView)findViewById(R.id.symbol_field);
-        String[] months = ((Thermidor)getApplication()).getMonths();
-        String[] symbols = ((Thermidor)getApplication()).getSymbols();
-        date_field.setText(revdate.toString(months));
-        symbol_field.setText(revdate.symbol(symbols));
+    	int checked = ((Thermidor)getApplication()).getChecked();
+        dateText.setText(revdate.toString(months.get(checked)));
+        symbolText.setText(revdate.symbol(symbols));
         ((Thermidor)getApplication()).setDate(d);
     }
 

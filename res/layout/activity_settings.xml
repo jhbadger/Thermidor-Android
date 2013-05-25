@@ -17,16 +17,20 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/radioFrench" 
-            android:checked="true" />
+            android:onClick="radioClick" />
+
         <RadioButton
             android:id="@+id/radioCarlyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="radioClick"
             android:text="@string/radioCarlyle" />
+
  		<RadioButton
             android:id="@+id/radioSatire"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="radioClick"
             android:text="@string/radioSatire" />
         
     </RadioGroup>

@@ -3,9 +3,11 @@ package com.ttaxus.thermidor;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
+import android.view.View;
 import android.view.MenuItem;
 import android.support.v4.app.NavUtils;
-import android.widget.RadioGroup;
+import android.widget.DatePicker;
+import android.widget.RadioButton;
 
 public class Settings extends Activity {
 
@@ -13,38 +15,23 @@ public class Settings extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_settings);
-		RadioGroup group = (RadioGroup) findViewById(R.id.radioMonthNames);
-		group.check(((Thermidor)getApplication()).getChecked());
-			group.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-				public void onCheckedChanged(RadioGroup group, int checkedId) {
-					int id;
-			        switch(checkedId) {
-			        case R.id.radioFrench: 
-			        	id = R.array.French_months;
-			        	break;
-			        case  R.id.radioCarlyle:
-			        	id = R.array.Carlyle_months;
-			        	break;
-			        case R.id.radioSatire:
-			        	id = R.array.English_satirical_months;
-			        	break;
-			        default:
-			        	id = R.array.French_months;
-			       }
-			        ((Thermidor)getApplication()).setMonths(getResources().getStringArray(id));
-			        ((Thermidor)getApplication()).setChecked(checkedId);
-				}});
+		int checked = ((Thermidor)getApplication()).getChecked();
+		RadioButton radio = (RadioButton) findViewById(checked);
+		radio.setChecked(true);
 		// Show the Up button in the action bar.
 		setupActionBar();
+	}
+	
+	public void radioClick(View view) {
+		int checked = view.getId();
+		((Thermidor)getApplication()).setChecked(checked);
 	}
 	
 	/**
 	 * Set up the {@link android.app.ActionBar}.
 	 */
 	private void setupActionBar() {
-
 		getActionBar().setDisplayHomeAsUpEnabled(true);
-
 	}
 
 	@Override
